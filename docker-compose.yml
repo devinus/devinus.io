@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 1313:1313
+    volumes:
+      - .:/usr/src/web
+      - /usr/src/web/public

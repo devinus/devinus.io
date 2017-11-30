@@ -1,0 +1,17 @@
+id = "devinus"
+
+[email]
+username = "d"
+host = "devinus.io"
+
+[name]
+display = "Devin Alexander Torres"
+
+[social]
+codepen = "devinus"
+email = "d@devinus.io"
+facebook = "devin.torres"
+github = "devinus"
+instagram = "devinus"
+linkedin = "devinus"
+twitter = "devinus"
