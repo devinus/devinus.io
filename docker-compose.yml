@@ -3,6 +3,9 @@ services:
   web:
     build:
       context: .
+      args:
+        - HUGO_VERSION=${HUGO_VERSION}
+    env_file: .env
     ports:
       - 1313:1313
     volumes:

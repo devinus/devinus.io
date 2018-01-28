@@ -31,7 +31,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 [params.copyright]
 prefix = ""
 holder = "Devin Alexander Torres"
-startYear = "2017"
+startYear = "2009"
 suffix = ""
 
 [params.settings]
@@ -39,9 +39,11 @@ suffix = ""
 dateFormat = "2006, Jan 2"
 listDateFormat = "2006, Jan 2"
 hideEntryNavigation = ["page"] # boolean / array of sections
+recentPostsLength = 4
 hideSocialMenu = false
 showReadingTime = true
 noTermCloudShuffle = false
+homepageSections = ["recent_posts"]
 
 [params.opengraph.facebook]
 admins = ["727615181"] # array of Facebook IDs
@@ -63,9 +65,10 @@ github = "devinus"
 instagram = "devinus"
 linkedin = "devinus"
 twitter = "devinus"
+telegram = "devinus"
 
 [params.social.config]
-platforms = ["github","linkedin","twitter","facebook","instagram","email"]
+platforms = ["github","linkedin","twitter","facebook","instagram","telegram","email"]
 
 [taxonomies]
 author = "authors"

@@ -3,8 +3,9 @@ LABEL maintainer="Devin Alexander Torres <d@devinus.io>"
 
 RUN apk add --no-cache tar curl
 
-ENV HUGO_VERSION 0.31.1
-RUN curl -sL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz | tar -C /usr/local/bin -xz hugo
+ARG HUGO_VERSION
+ENV HUGO_VERSION "${HUGO_VERSION}"
+RUN curl -sSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" | tar -xzC /usr/local/bin hugo
 
 RUN mkdir /usr/src
 RUN addgroup -S web
