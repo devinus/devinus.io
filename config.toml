@@ -15,6 +15,8 @@ enableRobotsTXT = true # generate robots.txt
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
 
+enableEmoji = true
+
 # Missing translations will default to this content language
 defaultContentLanguage = "en"
 
@@ -26,7 +28,7 @@ title404 = "Nothing's here!"
 favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+gopher = "https://storage.googleapis.com/gopherizeme.appspot.com/gophers/d220dd9582c6df8224dafb81319424fc97a7620f.png" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
@@ -38,12 +40,20 @@ suffix = ""
 # date & time format: https://golang.org/pkg/time/
 dateFormat = "2006, Jan 2"
 listDateFormat = "2006, Jan 2"
+archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
-recentPostsLength = 4
-hideSocialMenu = false
 showReadingTime = true
-noTermCloudShuffle = false
-homepageSections = ["recent_posts"]
+taxonomyCloudShuffle = true
+accentColor = "#ffcd00"
+hideMainMenu = false
+
+[params.sidebar]
+enable = false
+
+[params.widgets]
+homepage = ["recent_posts"]
+sidebar = ["about","taxonomy_cloud"]
+footer = ["social_menu"]
 
 [params.opengraph.facebook]
 admins = ["727615181"] # array of Facebook IDs
@@ -62,17 +72,30 @@ codepen = "devinus"
 email = "d@devinus.io"
 facebook = "devin.torres"
 github = "devinus"
+gitlab = "devinus"
 instagram = "devinus"
 linkedin = "devinus"
 twitter = "devinus"
 telegram = "devinus"
+google_scholar = ""
 
-[params.social.config]
-platforms = ["github","linkedin","twitter","facebook","instagram","telegram","email"]
+[params.comments]
+enable = false
+
+[params.comments.staticman]
+enable = true
+apiEndpoint = "https://api.staticman.net/v2/entry"
+maxDepth = 2
+
+[params.comments.staticman.github]
+username = "devinus"
+repository = "devinus.io"
+branch = "master"
 
 [taxonomies]
 author = "authors"
 category = "categories"
+series = "series"
 tag = "tags"
 
 [permalinks]
@@ -95,7 +118,7 @@ url = "/post"
 name = "Resume"
 weight = 10
 identifier = "resume"
-url = "https://cdn.rawgit.com/devinus/resume/8f461c59/DevinAlexanderTorres.pdf"
+url = "https://cdn.rawgit.com/devinus/resume/v1.0.0/DevinAlexanderTorres.pdf"
 
 [blackfriday]
 hrefTargetBlank = true
