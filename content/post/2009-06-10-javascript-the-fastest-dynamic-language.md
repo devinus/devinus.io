@@ -1,9 +1,9 @@
 ---
 title: 'JavaScript: The Fastest Dynamic Language?'
 date: 2009-06-10
-categories:
-- javascript
-- languages
+tags:
+  - javascript
+  - languages
 comments: true
 aliases:
   - /2009/06/10/javascript-the-fastest-dynamic-language/

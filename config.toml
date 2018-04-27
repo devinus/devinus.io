@@ -4,7 +4,7 @@ copyright = ""
 
 theme = "minimo"
 
-disqusShortname = "hackingdevintorres"
+disqusShortname = ""
 googleAnalytics = "UA-107671549-1"
 
 paginate = 5
@@ -33,7 +33,7 @@ gopher = "https://storage.googleapis.com/gopherizeme.appspot.com/gophers/d220dd9
 [params.copyright]
 prefix = ""
 holder = "Devin Alexander Torres"
-startYear = "2009"
+startYear = "1987"
 suffix = ""
 
 [params.settings]
@@ -65,7 +65,7 @@ page = "devinus" # Twitter page username
 
 [params.seo]
 # Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
+titleSeparator = "~"
 
 [params.social]
 codepen = "devinus"
@@ -80,7 +80,7 @@ telegram = "devinus"
 google_scholar = ""
 
 [params.comments]
-enable = false
+enable = true
 
 [params.comments.staticman]
 enable = true
@@ -121,7 +121,7 @@ identifier = "resume"
 url = "https://cdn.rawgit.com/devinus/resume/v1.0.0/DevinAlexanderTorres.pdf"
 
 [blackfriday]
-hrefTargetBlank = true
+hrefTargetBlank = false
 
 [languages]
 [languages.en]

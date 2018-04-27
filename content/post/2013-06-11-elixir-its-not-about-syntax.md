@@ -1,10 +1,10 @@
 ---
 title: 'Elixir: It''s Not About Syntax'
 date: 2013-06-11
-categories:
-- elixir
-- erlang
-- languages
+tags:
+  - elixir
+  - erlang
+  - languages
 comments: true
 aliases:
   - /2013/06/11/elixir-its-not-about-syntax/
@@ -113,7 +113,7 @@ MimeTypes.is_valid?("application/json")    #=> true
 
 ##### What just happened?
 
-We created a module that uses [HTTPotion](https://github.com/myfreeweb/httpotion) to download the public domain [mime.types](http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types) database from the Apache project, parses it, and creates a polymorphic function called `is_valid?`. This is exactly how `String.Unicode` is implemented in Elixir: it reads from an in-repo copy of the [Unicode 6.2.0 database](http://www.unicode.org/versions/Unicode6.2.0/) and statically compiles functions based on that database into the module. Extrapolate this power to anything, really. The public domain [tzdata](http://www.iana.org/time-zones) database for a timezone module, a [currency database](https://dspl.googlecode.com/hg/datasets/google/canonical/currencies.csv) module, SQL query pre-generation, etc. This expressivity makes writing faster code easier, with less [LOC](http://en.wikipedia.org/wiki/Source_lines_of_code). 
+We created a module that uses [HTTPotion](https://github.com/myfreeweb/httpotion) to download the public domain [mime.types](http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types) database from the Apache project, parses it, and creates a polymorphic function called `is_valid?`. This is exactly how `String.Unicode` is implemented in Elixir: it reads from an in-repo copy of the [Unicode 6.2.0 database](http://www.unicode.org/versions/Unicode6.2.0/) and statically compiles functions based on that database into the module. Extrapolate this power to anything, really. The public domain [tzdata](http://www.iana.org/time-zones) database for a timezone module, a [currency database](https://dspl.googlecode.com/hg/datasets/google/canonical/currencies.csv) module, SQL query pre-generation, etc. This expressivity makes writing faster code easier, with less [LOC](http://en.wikipedia.org/wiki/Source_lines_of_code).
 
 {{< figure src="http://i.imgur.com/tXIloPl.png" title="Slam Dunk" >}}
 

@@ -1,10 +1,10 @@
 ---
 title: The Excitement of Elixir
 date: 2013-01-22
-categories:
-- elixir
-- erlang
-- languages
+tags:
+  - elixir
+  - erlang
+  - languages
 comments: true
 aliases:
   - /2013/01/22/the-excitement-of-elixir/
@@ -135,7 +135,7 @@ How many times have you wished for multiline strings in Erlang? It's something s
 Elixir continues to [blow me away everyday](https://github.com/elixir-lang/elixir/blob/master/lib/elixir/lib/kernel.ex#L22). The crazy thing is, it's still just Erlang underneath. Theoretically, Elixir code is just as fast as Erlang code. Elixir function calls are just Erlang function calls. In fact, it may be easier to write more [performant](http://en.wiktionary.org/wiki/performant) code in Elixir simply because of the power available to you to at compile time. For example, regular expressions in Elixir are [compiled at compile time](https://github.com/elixir-lang/elixir/blob/master/lib/elixir/lib/kernel.ex#L3139) instead of runtime. The [Dynamo](https://github.com/josevalim/dynamo) web framework compiles routes to function heads, matching based on function guards. The latest Elixir will have a [`HashDict`](https://github.com/elixir-lang/elixir/blob/master/lib/elixir/lib/hash_dict.ex#L13) implementation [significantly faster](https://gist.github.com/4594017#file-result_1_000_000-txt) than Erlang's `dict`.
 
 > Lisps traditionally empowered developers because **you can eliminate anything that's tedious through macros, and that power is really what people keep going back for**.
-> 
+>
 > -- Rich Hickey
 
 ## I'm done (for now)
