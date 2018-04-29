@@ -16,6 +16,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local-dir: public
+  keep-history: true
   repo: devinus/devinus.github.io
   target-branch: master
   fqdn: devinus.io
