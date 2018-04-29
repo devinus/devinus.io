@@ -1,6 +1,7 @@
 ---
-title: A Transliterating URL Slugifier in Erlang
 date: 2010-06-23
+title: A Transliterating URL Slugifier in Erlang
+authors: ['devinus']
 tags:
   - erlang
 comments: true

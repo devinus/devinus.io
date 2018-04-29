@@ -1,10 +1,12 @@
 ---
-title: The Excitement of Elixir
 date: 2013-01-22
+title: The Excitement of Elixir
+authors: ['devinus']
+categories:
+  - languages
 tags:
   - elixir
   - erlang
-  - languages
 comments: true
 aliases:
   - /2013/01/22/the-excitement-of-elixir/

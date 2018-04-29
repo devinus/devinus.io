@@ -1,6 +1,7 @@
 ---
-title: Turn CSS Rules Into Inline Style Attributes Using jQuery
 date: 2010-05-26
+title: Turn CSS Rules Into Inline Style Attributes Using jQuery
+authors: ['devinus']
 tags:
   - css
   - javascript

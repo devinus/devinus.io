@@ -1,6 +1,7 @@
 ---
-title: A JavaScript LRU (Least-Recently-Used) Cache
 date: 2010-05-21
+title: A JavaScript LRU (Least-Recently-Used) Cache
+authors: ['devinus']
 tags:
   - javascript
 comments: true

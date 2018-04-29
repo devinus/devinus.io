@@ -1,10 +1,12 @@
 ---
-title: 'Elixir: It''s Not About Syntax'
 date: 2013-06-11
+title: 'Elixir: It''s Not About Syntax'
+authors: ['devinus']
+categories:
+  - languages
 tags:
   - elixir
   - erlang
-  - languages
 comments: true
 aliases:
   - /2013/06/11/elixir-its-not-about-syntax/

@@ -1,6 +1,7 @@
 ---
-title: Helpful SproutCore Binding Transforms
 date: 2011-01-31
+title: Helpful SproutCore Binding Transforms
+authors: ['devinus']
 tags:
   - sproutcore
 comments: true

@@ -1,6 +1,10 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
+date: "{{ .Date }}"
+title: "{{ replace .TranslationBaseName '-' ' ' | title }}"
+authors: ['devinus']
+categories:
+  -
+tags:
+  -
 draft: true
 ---
-
