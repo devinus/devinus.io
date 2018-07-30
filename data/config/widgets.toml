@@ -10,6 +10,10 @@ title = ""                            # default: "Recent Posts"
 length = 5                            # default: 5
 excludeTypes = ["page"]               # default: ["page"]
 
+# Search Widget config
+[search]
+title = "Search"                      # default: "Search"
+
 # Sidebar Menu Widget config
 [sidebar_menu]
 title = ""                            # default: ""
@@ -18,7 +22,7 @@ mirror = ""                           # default: ""
 # Social Menu Widget config
 [social_menu]
 title = ""                            # default: ""
-platforms = ["email","github","twitter","linkedin","facebook","instagram"]
+platforms = ["email","github","twitter","linkedin","facebook","instagram","youtube"]
 
 # Taxonomy Cloud Widget config
 [taxonomy_cloud]
