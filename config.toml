@@ -42,7 +42,9 @@ dateFormat = "2006, Jan 2"
 listDateFormat = "2006, Jan 2"
 archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
+hideEntryMeta = ["page"] # boolean / array of sections
 showReadingTime = true
+showLastmod = true
 taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
 hideMainMenu = false
@@ -82,6 +84,12 @@ youtube = "UCeaXqB8AwZlzzm6Op0rYTBw"
 
 [params.comments]
 enable = true
+
+# Isso: https://posativ.org/isso/
+[params.comments.isso]
+enable = false
+scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
+dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [params.comments.staticman]
 enable = true
