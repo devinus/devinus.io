@@ -9,7 +9,7 @@ before_script:
   - git submodule update --init
 
 script:
-  - docker-compose run --rm web hugo
+  - docker-compose run --rm web hugo --minify
 
 deploy:
   provider: pages
