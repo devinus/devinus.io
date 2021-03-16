@@ -144,7 +144,7 @@ url = "/post"
 name = "Resume"
 weight = 10
 identifier = "resume"
-url = "https://rawcdn.githack.com/devinus/resume/ca1a0d938d5e6d545c4502223f0bb350757a1698/DevinAlexanderTorres.pdf"
+url = "https://rawcdn.githack.com/devinus/resume/6bc2b8abea97f79e0ad93746f58ee15b02e7090c/DevinAlexanderTorres.pdf"
 
 [blackfriday]
 hrefTargetBlank = false
