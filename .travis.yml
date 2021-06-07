@@ -1,12 +1,20 @@
-sudo: required
+dist: focal
 
 services:
   - docker
 
-before_script:
-  - docker --version
-  - docker-compose --version
+stages:
+  - name: before_script
+    if: branch = master
+
+before_install:
+  - docker-compose version
+
+install:
   - git submodule update --init
+
+before_script:
+  - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USER" --password-stdin
 
 script:
   - docker-compose run --rm web hugo --minify
