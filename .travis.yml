@@ -14,7 +14,10 @@ install:
   - git submodule update --init
 
 before_script:
-  - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USER" --password-stdin
+  - |
+    if [ $TRAVIS_BRANCH == "master" && $TRAVIS_PULL_REQUEST == "false" ]; then
+      echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USER" --password-stdin
+    fi
 
 script:
   - docker-compose run --rm web hugo --minify

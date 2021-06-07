@@ -27,7 +27,7 @@ title404 = "Nothing's here!"
 [params.assets]
 favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
-customJS = ["js/custom.js"]
+customJS = []
 gopher = "https://storage.googleapis.com/gopherizeme.appspot.com/gophers/d220dd9582c6df8224dafb81319424fc97a7620f.png" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
@@ -53,6 +53,7 @@ hideMainMenu = false
 enable = false
 
 [params.widgets]
+header = []
 homepage = ["recent_posts"]
 sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
 footer = ["social_menu"]
@@ -79,7 +80,7 @@ instagram = "devinus"
 linkedin = "devinus"
 twitter = "devinus"
 telegram = "devinus"
-google_scholar = ""
+google_scholar = "TU2c7ZwAAAAJ"
 youtube = "UCeaXqB8AwZlzzm6Op0rYTBw"
 
 [params.comments]
@@ -93,18 +94,17 @@ dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author=
 
 [params.comments.staticman]
 enable = true
-apiEndpoint = "https://api.staticman.net/v2/entry"
+apiEndpoint = "https://devinus-staticman.herokuapp.com/v2/entry"
 maxDepth = 2
-
-[params.comments.staticman.github]
 username = "devinus"
 repository = "devinus.io"
-branch = "master"
 
 # Utterances: https://utteranc.es
 [params.comments.utterances]
 enable = false
-issueTerm = "pathname" # pathname / url / title
+issueTerm = "pathname" # pathname / url / title / og:title / <string>
+label = ""
+theme = "github-light"
 
 [params.comments.utterances.github]
 username = "devinus"
