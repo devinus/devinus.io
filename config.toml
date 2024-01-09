@@ -94,7 +94,7 @@ dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author=
 
 [params.comments.staticman]
 enable = true
-apiEndpoint = "https://devinus-staticman.herokuapp.com/v2/entry"
+apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 username = "devinus"
 repository = "devinus.io"
@@ -151,6 +151,7 @@ hrefTargetBlank = false
 
 [languages]
 [languages.en]
-lang = "en"
 languageName = "English"
 weight = 1
+[languages.en.params]
+lang = "en"
