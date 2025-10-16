@@ -1,6 +1,6 @@
 comments:
   allowedFields: ['author', 'content', 'email', 'parent_id', 'permalink', 'site']
-  branch: 'master'
+  branch: 'main'
   commitMessage: 'add [comment]: by {fields.author} <Staticman>\n\n{fields.permalink}#comment-{@id}'
   filename: '{@id}'
   generatedFields:
